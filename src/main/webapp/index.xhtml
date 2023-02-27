@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h = "http://java.sun.com/jsf/html"
+>
+<h:head>
+    <title>Todo Application</title>
+</h:head>
+<h:body>
+  <h:form>
+      Name: <h:inputText value="#{firstBean.name}" /> <br/>
+      <h:commandButton actionListener="#{firstBean.doGreetings()}"></h:commandButton>
+      <h:outputText value="#{firstBean.greetings}" />
+  </h:form>
+</h:body>
+</html>
